@@ -4,6 +4,10 @@ const lineSeparator = /\r|\n/;
 
 const defaultOptions = {suppressErrors: false};
 
+exports.parseTest = function parseTest(str) {
+  return str;
+}
+
 exports.parse = function parseCode128(str, options = defaultOptions) {
   const props = {};
   const rawLines = str.trim().split(lineSeparator);
